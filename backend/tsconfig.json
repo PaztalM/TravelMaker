@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",//what JavaScript version to emit (modern, supported by Node
+    "module": "CommonJS",//what module system to use (CommonJS for Node.js)
+    "moduleResolution": "node",//how to resolve modules (Node.js style)
+    "outDir": "dist",//where to emit the compiled files
+    "rootDir": "src",//where the source files are located
+    "strict": true,//TypeScript is strict (catches more mistakes).
+    "esModuleInterop": true,//makes default imports from CommonJS smoother (import express from 'express' works nicely)
+    "skipLibCheck": true//skip type-checking .d.ts files in dependencies (faster).
+  },
+  "include": ["src"]//only compile files inside src/.
+}
